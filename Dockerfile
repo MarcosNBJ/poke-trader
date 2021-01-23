@@ -7,7 +7,11 @@ WORKDIR /app
 COPY Gemfile /app/Gemfile
 COPY Gemfile.lock /app/Gemfile.lock
 COPY . /app
+RUN yarn install --no-lockfile
 RUN bundle install
+RUN rails webpacker:install
+RUN rails webpacker:install:react
+RUN rails generate react:install
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
