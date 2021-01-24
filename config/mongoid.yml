@@ -45,7 +45,7 @@ test:
     default:
       database: app_test
       hosts:
-        - localhost:27017
+        - <%= ENV['MONGODB_URI'].present? ? ENV['MONGODB_URI'] : 'localhost:27017' %>
       options:
         read:
           mode: :primary
