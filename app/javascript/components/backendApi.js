@@ -4,7 +4,7 @@ import $ from "jquery"
 
 
 const backendApi = axios.create({
-    baseURL: "http://localhost:3000/api/v1",//process.env.BASE_URL,
+    baseURL: `${process.env.BASE_URL}/api/v1`,
     headers: {
       "X-CSRF-Token": $('meta[name="csrf-token"]').attr("content"),
     },
