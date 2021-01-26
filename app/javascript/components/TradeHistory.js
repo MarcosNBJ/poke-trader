@@ -15,7 +15,7 @@ function TradeHistory() {
       <h1 className="cover-heading">Ultimas Trades</h1>
       <div>
         {trades.map((trade, index) => (
-          <div className="row" key={index}>
+          <div className={`row alert alert-${trade.is_fair ? "success" : "danger" }`} key={index}>
             <div className="col-5">
               {trade.pokemons_group_one.map((pokemon, p1index) => (
 
