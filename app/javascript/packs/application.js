@@ -8,7 +8,7 @@ require("turbolinks").start()
 require("channels")
 
 import 'bootstrap'
-import './src/application.scss'
+import '../styles/application.scss'
 
 var componentRequireContext = require.context("components", true)
 var ReactRailsUJS = require("react_ujs")
