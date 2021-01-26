@@ -12,6 +12,7 @@ RUN bundle install
 RUN rails webpacker:install
 RUN rails webpacker:install:react
 RUN rails generate react:install
+RUN rake db:seed
 EXPOSE 3000
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
