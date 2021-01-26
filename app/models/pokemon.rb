@@ -3,7 +3,7 @@
 class Pokemon
   include Mongoid::Document
   include Mongoid::Timestamps
-  
+
   field :name, type: String
   field :base_experience, type: Integer
   field :hp, type: Integer
