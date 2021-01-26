@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./Trade.css";
 import InfiniteScroll from 'react-infinite-scroller';
 import  backendApi  from "./backendApi"
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InfiniteScroll from 'react-infinite-scroller';
 import  backendApi  from "./backendApi"
-import "./TradeHistory.css";
 
 function TradeHistory() {
     const [trades, setTrades] = useState([]);

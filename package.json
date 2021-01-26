@@ -18,7 +18,9 @@
     "react-infinite-scroller": "^1.2.4",
     "react-router-dom": "^5.2.0",    
     "react_ujs": "^2.6.1",
-    "turbolinks": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.44.1"
   },
   "version": "0.1.0",
   "devDependencies": {
