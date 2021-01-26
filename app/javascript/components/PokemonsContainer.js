@@ -20,6 +20,7 @@ function PokemonsContainer({ loadMorePokemons, pokemons, addTrainerPokemons }) {
                   <img className="card-img-top" src={pokemon.sprite} alt="Card image cap" />
                   <div className="card-body">
                     <h6 className="card-text">{pokemon.name}</h6>
+                    <p className="card-text">{`XP:${pokemon.base_experience}`}</p>
                     <button
                       className="btn btn-primary m-1"
                       onClick={() => addTrainerPokemons(pokemon, 'trainerOne')}
