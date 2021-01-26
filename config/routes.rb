@@ -7,5 +7,7 @@ Rails.application.routes.draw do
       resources :trades, only: %i[index create]
     end
   end
-  root to: 'hello#home'
+  root to: 'home#home'
+  get '/*path' => 'home#home'
+
 end

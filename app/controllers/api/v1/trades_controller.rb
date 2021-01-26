@@ -18,7 +18,7 @@ module Api
                   .offset(pagination_params[:offset])
                   .limit(pagination_params[:limit])
                   .only(:pokemons_group_one, :pokemons_group_two, :is_fair)
-        render_json_reponse(:ok, @trades)
+       render_json_reponse(:ok, @trades)
       end
 
       private def trade_params
