@@ -1,6 +1,6 @@
 import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 import Routes from './routes';
-import { Navbar, Nav } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -22,7 +22,7 @@ function Index() {
       </Navbar>
       <Routes />
     </>
- );
+  );
 }
 
 export default Index;

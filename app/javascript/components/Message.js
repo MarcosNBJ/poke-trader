@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-function Message({content, type}) {
-    return (
-      <div className={`alert alert-${type}`} role="alert">
-        {content}
-      </div>
-    )
+function Message({ content, type }) {
+  return (
+    <div className={`alert alert-${type}`} role="alert">
+      {content}
+    </div>
+  );
 }
 
-export default Message
+export default Message;

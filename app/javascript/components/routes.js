@@ -1,7 +1,7 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Trade from './Trade'; 
-import TradeHistory from './TradeHistory'; 
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Trade from './Trade';
+import TradeHistory from './TradeHistory';
 
 function Routes() {
   return (
