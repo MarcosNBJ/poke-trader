@@ -10,7 +10,6 @@ module Api
         @pokemons = Pokemon
                     .offset(pagination_params[:offset])
                     .limit(pagination_params[:limit])
-                    .only(:name, :base_experience, :hp, :attack, :defense, :sprite)
         render_json_reponse(:ok, @pokemons)
       end
 
